@@ -19,8 +19,7 @@ dnf5 remove -y \
   ptyxis
 
 # this installs a package from fedora repos
-dnf5 install -y tmux
-dnf5 -y install micro
+
 
 # Use a COPR Example:
 #
@@ -50,7 +49,9 @@ dnf5 -y install			\
 dnf5 -y copr disable solopasha/hyprland
 
 # more desktop-environment utils
-dnf5 -y install		\
+dnf5 -y install			\
+	tmux			\
+	micro			\
 	kitty			\
 	sddm			\
 	pipewire		\
