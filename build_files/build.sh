@@ -29,7 +29,7 @@ dnf5 remove -y \
 dnf5 -y copr enable ublue-os/packages
 dnf5 -y copr enable ublue-os/staging
 
-dnf5 -y install bazaar
+dnf5 -y install bazaar krunner-bazaar
 
 # setup hyprland from COPR
 dnf5 -y copr enable solopasha/hyprland
