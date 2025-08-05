@@ -42,7 +42,6 @@ dnf5 -y install			\
 	hyprsunset			\
 	hyprpolkitagent		\
 	hyprsysteminfo		\
-	hyprpanel			\
 	qt6ct-kde			\
 	hyprland-qt-support	\
 	hyprland-qtutils
@@ -55,6 +54,7 @@ dnf5 -y install			\
 	kitty			\
 	sddm			\
 	pipewire		\
+ 	waybar			\
 	wofi			\
 	brightnessctl
 
@@ -66,4 +66,3 @@ dnf5 -y copr disable ublue-os/staging
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
-systemctl --global enable hyprpanel.service
