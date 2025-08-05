@@ -19,8 +19,7 @@ dnf5 remove -y \
   ptyxis
 
 # this installs a package from fedora repos
-dnf5 install -y tmux
-dnf5 -y install micro
+
 
 # Use a COPR Example:
 #
@@ -31,6 +30,33 @@ dnf5 -y copr enable ublue-os/packages
 dnf5 -y copr enable ublue-os/staging
 
 dnf5 -y install bazaar
+
+# setup hyprland from COPR
+dnf5 -y copr enable solopasha/hyprland
+dnf5 -y install			\
+	hyprland			\
+	hyprpaper			\
+	hyprpicker			\
+	hypridle			\
+	hyprlock			\
+	hyprsunset			\
+	hyprpolkitagent		\
+	hyprsysteminfo		\
+	qt6ct-kde			\
+	hyprland-qt-support	\
+	hyprland-qtutils
+dnf5 -y copr disable solopasha/hyprland
+
+# more desktop-environment utils
+dnf5 -y install			\
+	tmux			\
+	micro			\
+	kitty			\
+	sddm			\
+	pipewire		\
+ 	waybar			\
+	wofi			\
+	brightnessctl
 
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
